@@ -12,8 +12,8 @@ const scratchieReducer = (total,nextScratchie) => {
     }
 
     const winningNumbers = pickedNumbersArr.filter(checkInResults)
-    // console.log(winningNumbers, Math.floor(Math.pow(2,winningNumbers.length)/2))
-    return total + Math.floor(Math.pow(2,winningNumbers.length)/2)
+    // console.log(winningNumbers, Math.floor(Math.pow(2,winningNumbers.length)/2),Math.pow(2,winningNumbers.length-1))
+    return total + Math.floor(Math.pow(2,winningNumbers.length-1))
 
 }
 const cardTitleReg = /Card.+\d:/g
